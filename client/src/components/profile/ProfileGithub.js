@@ -20,7 +20,7 @@ const ProfileGithub = ({ username, getGithubRepos, repos }) => {
                             <h4>
                                 <a href={repo.html_url} target='_blank' rel='noopener norefferer' className='text-dark'>
                                     <i className='fab fa-github'></i>{' '}
-                                    <u>{repo.name}</u>
+                                    <u>{repo.name}{' '}<i className='fas fa-external-link-alt'/></u>
                                 </a>
                             </h4>
                             <p>{repo.description}</p>
